@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import test from './markup/test.md';
+import intro from './markup/intro.md';
 import test2 from './markup/test2.md'
 import ReactMarkdown from 'react-markdown';
 
@@ -14,7 +14,7 @@ class Concepts extends Component {
     }
 
     async componentDidMount() {
-        let concept = [test, test2];
+        let concept = [intro, test2];
         let conceptArray = [];
 
         for (let i = 0; i < concept.length; i++) {
@@ -38,7 +38,6 @@ class Concepts extends Component {
                     {this.state.markup.map((post, index) => <ReactMarkdown source={post} key={index} />)}
                 </div>
             </div>
-
         );
     }
 }
