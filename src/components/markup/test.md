@@ -1,3 +1,5 @@
-# Hello World
+### What is React...
 
-This is a test.
+It is the **View** in a MVC (Model-View-Controller) Framework.
+
+***

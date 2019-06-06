@@ -17,12 +17,10 @@ class Concepts extends Component {
         let concept = [test, test2];
         let conceptArray = [];
 
-        console.log(concept);
         for (let i = 0; i < concept.length; i++) {
             await fetch(concept[i]).then(
                 (res) => res.text()
             ).then((text) => {
-                console.log(text);
                 conceptArray.push(text);
             })
         }
@@ -34,11 +32,9 @@ class Concepts extends Component {
     }
 
     render() {
-
-        console.log(this.state.markup);
         return (
             <div className="concept-container">
-                <div className="concept-container">
+                <div className="concept">
                     {this.state.markup.map((post, index) => <ReactMarkdown source={post} key={index} />)}
                 </div>
             </div>
