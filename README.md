@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Reacting to Concepts
 
-This project goes over coding concepts with React by displaying markdown files.
+This project goes over coding concepts with React,which is displayed via markdown files.
+
+The React coding concepts comes from this overview:https://zhenyong.github.io/react/docs/jsx-in-depth.html.
 
 Requires npm module: react-markdown.
