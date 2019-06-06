@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import intro from './markup/intro.md';
-import test2 from './markup/test2.md'
+import dataDisplay from './markup/dataDisplay.md'
 import ReactMarkdown from 'react-markdown';
 
 
@@ -14,7 +14,7 @@ class Concepts extends Component {
     }
 
     async componentDidMount() {
-        let concept = [intro, test2];
+        let concept = [intro, dataDisplay];
         let conceptArray = [];
 
         for (let i = 0; i < concept.length; i++) {
