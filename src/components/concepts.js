@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import intro from './markup/intro.md';
-import dataDisplay from './markup/dataDisplay.md'
 import ReactMarkdown from 'react-markdown';
+import intro from './markup/intro.md';
+import dataDisplay from './markup/dataDisplay.md';
+import jsxInDepth from './markup/jsxInDepth.md';
+
 
 
 class Concepts extends Component {
@@ -14,7 +16,7 @@ class Concepts extends Component {
     }
 
     async componentDidMount() {
-        let concept = [intro, dataDisplay];
+        let concept = [intro, dataDisplay, jsxInDepth];
         let conceptArray = [];
 
         for (let i = 0; i < concept.length; i++) {
