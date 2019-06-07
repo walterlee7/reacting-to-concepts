@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/reacting-to-concepts/static/css/main.1f9590e9.chunk.css",
+    "main.js": "/reacting-to-concepts/static/js/main.7d4f35ed.chunk.js",
+    "main.js.map": "/reacting-to-concepts/static/js/main.7d4f35ed.chunk.js.map",
+    "runtime~main.js": "/reacting-to-concepts/static/js/runtime~main.a79cc06f.js",
+    "runtime~main.js.map": "/reacting-to-concepts/static/js/runtime~main.a79cc06f.js.map",
+    "static/js/2.69e4e739.chunk.js": "/reacting-to-concepts/static/js/2.69e4e739.chunk.js",
+    "static/js/2.69e4e739.chunk.js.map": "/reacting-to-concepts/static/js/2.69e4e739.chunk.js.map",
+    "index.html": "/reacting-to-concepts/index.html",
+    "precache-manifest.8d61b00c2bae75a9830b102a6121c4bb.js": "/reacting-to-concepts/precache-manifest.8d61b00c2bae75a9830b102a6121c4bb.js",
+    "service-worker.js": "/reacting-to-concepts/service-worker.js",
+    "static/css/main.1f9590e9.chunk.css.map": "/reacting-to-concepts/static/css/main.1f9590e9.chunk.css.map",
+    "static/media/dataDisplay.md": "/reacting-to-concepts/static/media/dataDisplay.cc50924c.md",
+    "static/media/intro.md": "/reacting-to-concepts/static/media/intro.a6621f6b.md",
+    "static/media/jsxInDepth.md": "/reacting-to-concepts/static/media/jsxInDepth.e6c40d4d.md",
+    "static/media/logo.svg": "/reacting-to-concepts/static/media/logo.5d5d9eef.svg"
+  }
+}
