@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import intro from './markup/intro.md';
 import dataDisplay from './markup/dataDisplay.md';
 import jsxInDepth from './markup/jsxInDepth.md';
+import dynamicUI from './markup/dynamicUI.md';
 
 
 
@@ -16,7 +17,7 @@ class Concepts extends Component {
     }
 
     async componentDidMount() {
-        let concept = [intro, dataDisplay, jsxInDepth];
+        let concept = [intro, dataDisplay, jsxInDepth, dynamicUI];
         let conceptArray = [];
 
         for (let i = 0; i < concept.length; i++) {
