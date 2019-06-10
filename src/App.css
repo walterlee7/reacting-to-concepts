@@ -1,46 +1,55 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 10vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 5s linear;
+    height: 10vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(5px + 1vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 1vmin);
+    color: white;
 }
 
 @keyframes App-logo-spin {
-  from {
+    from {
     transform: rotate(0deg);
-  }
-  to {
+    }
+    to {
     transform: rotate(360deg);
-  }
+    }
 }
 
 .concept-container {
-  background-color: rgb(65, 175, 202);
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(4px + 2vmin);
-  color: white;
+    background-color: rgb(65, 175, 202);
+    min-height: 20vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    font-size: calc(4px + 2vmin);
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.test {
+    display: inline-block
 }
 
 .concept {
-    margin: 0.5em;
+    overflow-wrap: break-word;
+    border: 1px solid black;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
     padding: 0.4em;
     background-color: #60DBFB;
     color: black;
