@@ -10,7 +10,7 @@
 
 .App-header {
     background-color: #282c34;
-    min-height: 25vh;
+    min-height: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,19 +30,15 @@
 
 .concept-container {
     background-color: rgb(65, 175, 202);
-    min-height: 20vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     font-size: calc(4px + 2vmin);
     color: white;
     position: relative;
     text-align: center;
 }
 
-.test {
-    display: inline-block
+#text-container {
+    display: inline-block;
+    margin-top: 0.4em;
 }
 
 .concept {
