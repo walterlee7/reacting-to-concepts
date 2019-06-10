@@ -24,43 +24,30 @@ __****__
 
 ### Multiple Components
 
-<!-- ```
-var Avatar = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <PagePic pagename={this.props.pagename} />
-        <PageLink pagename={this.props.pagename} />
-      </div>
-    );
-  }
-});
-
-var PagePic = React.createClass({
-  render: function() {
-    return (
-      <img src={'a website' + this.props.pagename + '/picture'} />
-    );
-  }
-});
-
-var PageLink = React.createClass({
-  render: function() {
-    return (
-      <a href={'a website' + this.props.pagename}>
-        {this.props.pagename}
-      </a>
-    );
-  }
-});
-
-ReactDOM.render(
-  <Avatar pagename="Engineering" />,
-  document.getElementById('example')
-);
-``` -->
-
 In React, an owner is the component that sets the props of other components.
 
+**<Parent><Child /></Parent>**
+
+Parent can read its children by accessing the special this.props.children prop.
+
+this.props.children is an opaque data structure.
+
+Reconciliation is the process by which React updates the DOM with each new render pass. In general, children are reconciled according to the order in which they are rendered.
+
+However, for stateful components that maintain data in this.state across render passes, this can be very problematic, so elements that need to be destroyed on future renders can be display:'none'.
+
+In cases where the identity and state of each child must be maintained across render passes, you can uniquely identify each child by assigning it a **key**.
+
+The key should always be supplied directly to the components in the array, not to the container HTML child of each component in the array.
+
+**{this.props.results.map(function(result) {
+           return <ListItemWrapper key={result.id} data={result}/>;
+})}**
+
+You can also key children by passing a ReactFragment object.
+
+If shouldComponentUpdate() returns false when data has actually changed, React can't keep your UI in sync. Be sure you know what you're doing while using it, and only use this function when you have a noticeable performance problem. Don't underestimate how fast JavaScript is relative to the DOM.
+
+### Reusable Components
 
 __****__
